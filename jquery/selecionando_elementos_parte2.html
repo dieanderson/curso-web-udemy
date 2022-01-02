@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    
+    <input class="exemplo1" type="text" placeholder="input 1" />
+    <input type="text" placeholder="input 2" />
+    <input type="text" placeholder="input 3" />
+    
+    <div class="lista1">Div 1</div>
+    <div>Div 2</div>
+    <div>Div 3</div>
+
+    <ul class="lista1">
+        <li class="exemplo1">opção 1</li>
+        <li class="exemplo1">opção 2</li>
+        <li>opção 3</li>
+    </ul>
+    
+    <ul class="lista2">
+        <li class="exemplo1">opção 1</li>
+        <li class="exemplo1">opção 2</li>
+        <li>opção 3</li>
+    </ul>
+   
+</body>
+    <script>
+        //console.log( $('input') ); 
+        //console.log( $('.exemplo1') ); 
+        //console.log( $('div.exemplo1') ); 
+        
+        //console.log( $('.lista1 .exemplo1') ); 
+
+        console.log($('.lista1 .exemplo1'));
+
+        console.log($('.lista1 .exemplo1:first'));
+        console.log($('.lista1 .exemplo1:last'));
+        console.log($('.lista1 .exemplo1:even'));
+        console.log($('.lista1 .exemplo1:odd'));
+    </script>
+</html>
