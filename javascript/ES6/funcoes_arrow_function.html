@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        /* função anônima
+        let quadrado = function(x){
+            return x*x
+        }*/
+        /*
+        //arrow function
+        let quadrado = (x) =>{
+            return x*x
+        }*/
+        /*
+        //com um unico parametro pode omitir os parenteses
+        let quadrado = x =>{
+            return x*x
+        }*/
+
+        //com uma unica instrução pode omitir as chaves e o return
+        //let quadrado = x => x*x
+
+        //document.write(quadrado(3))
+        
+        //---------------------------------------------------------
+
+        /*função anonima
+        let parOuImpar = function(numero){
+            if(numero % 2 === 0){
+                return 'par'
+            }else{
+                return 'impar'
+            }    
+        }*/
+
+        /*arrow function
+        let parOuImpar = numero =>{
+            if(numero % 2 === 0){
+                return 'par'
+            }else{
+                return 'impar'
+            }
+        }*/
+        //arrow function com if ternário
+        let parOuImpar = numero => numero % 2 === 0 ? 'par' : 'impar'          
+
+        document.write(parOuImpar(15))
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

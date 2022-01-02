@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        function calculo(valor1, valor2, operacao){
+            if( operacao == 'soma' ){
+                return ( parseFloat(valor1) + parseFloat(valor2) )
+            }else if( operacao == 'subtração' ){
+                return ( parseFloat(valor1) - parseFloat(valor2) )
+            }else{
+                return 'Operação inválida'
+            }
+        }
+
+        var valor1 = prompt('Informe um número:')
+        var operacao = prompt('Informe a operação(soma ou subtração):')
+        var valor2 = prompt('Informe o outro número:')
+        
+
+        var resultado = calculo(valor1, valor2, operacao)
+
+        document.write('O resultado é: ' + resultado)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
